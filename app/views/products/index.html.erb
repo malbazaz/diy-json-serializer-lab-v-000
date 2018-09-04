@@ -19,7 +19,7 @@ $(function() {
         $("#product-" + id).html(descriptionText);
       });
       $.getJson("/products"+ id + "/data", function(data){
-        $("#product-"+id).html(data[:description])
+        $("#product-"+id).html(data[:description]))
       })
     });
   });
