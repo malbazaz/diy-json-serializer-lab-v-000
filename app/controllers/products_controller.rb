@@ -27,9 +27,9 @@ class ProductsController < ApplicationController
     render json: ProductSerializer.serialize(product)
 end
 
-def show 
+def show
   @Product = Product.find(params[:id])
-end 
+end
   private
 
   def product_params
